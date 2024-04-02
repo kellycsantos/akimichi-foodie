@@ -2,10 +2,17 @@ import { useState } from 'react'
 import './App.css'
 import Button from './components/Button/Button'
 import Header from './components/Header/Header'
+import Card from './components/Card/Card'
 
 function App() {
+
+  function alertTeste(){
+    alert('ola')
+  }
+
   const [count, setCount] = useState(0)
   const links = [ 
+
 
     {
       link: '/',
@@ -28,6 +35,7 @@ function App() {
   return (
     <>
     <Header links={links}/>
+    <button onClick={alertTeste}>aa</button>
       <div>
         <h1>Your favourite food & hot</h1>
         <h2>Akimichi foodie</h2>
@@ -38,6 +46,7 @@ function App() {
       <Button variant='success disabled' value='order now'  />
       <Button variant='booking' value='order now'  />
       <Button variant='booking' value='booking now'/>
+      <Card variant='info' title='Today 10:00am-7:00pm' description='working hours'/>
     </>
   )
 }

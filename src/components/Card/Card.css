@@ -1,0 +1,15 @@
+.card{
+    border-bottom-left-radius: 10px ;
+    box-shadow: 2px 5px 6px var(--gray);
+    display: flex;
+    flex-direction: column;
+}
+
+.card.info{
+    width: 230px;
+    text-align: center;
+}
+
+.card .description{
+    color: rebeccapurple;
+}
