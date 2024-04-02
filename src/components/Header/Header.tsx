@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom"
 import './Header.css'
 import Button from "../Button/Button";
 
+
 interface INav {
     links: ILinks[]
 }
@@ -21,6 +22,7 @@ export default function Header({ links }: INav) {
                         <NavLink key={index} to={link.link}>{link.value}</NavLink>
                     )
                 }
+                <Button variant="cart"/>
                 <Button variant="booking" value="booking now"/>
             </nav>
         </header>
