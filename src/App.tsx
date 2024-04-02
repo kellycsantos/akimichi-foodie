@@ -1,33 +1,43 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Button from './components/Button/Button'
+import Header from './components/Header/Header'
 
 function App() {
   const [count, setCount] = useState(0)
+  const links = [ 
+
+    {
+      link: '/',
+      value: 'home'
+    },
+    {
+      link: '/packages',
+      value: 'packages'
+    },
+    {
+      link: '/about-us',
+      value: 'about us'
+    },
+    {
+      link: '/contact',
+      value: 'contact us'
+    },
+  ]
 
   return (
     <>
+    <Header links={links}/>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <h1>Your favourite food & hot</h1>
+        <h2>Akimichi foodie</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima ullam officia, eos amet sint voluptates odit nemo provident fuga beatae.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing eli</p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Button variant='pill' value='order now'  />
+      <Button variant='success disabled' value='order now'  />
+      <Button variant='booking' value='order now'  />
+      <Button variant='booking' value='booking now'/>
     </>
   )
 }

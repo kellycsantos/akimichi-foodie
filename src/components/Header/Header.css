@@ -1,0 +1,20 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+nav h2{
+    margin: 0;
+}
+
+a{
+ color: var(--primary-text);
+ transition: 2s;
+}
+a:hover{
+ border-bottom: 1px solid var(--primary-text); 
+}
