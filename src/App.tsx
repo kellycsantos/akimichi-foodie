@@ -48,6 +48,8 @@ function App() {
       <Button variant='booking' value='order now'  />
       <Button variant='booking' value='booking now'/>
       <Card variant='info' icon={iconClock} title='Today 10:00am-7:00pm' description='working hours'/>
+      <Card variant='about' icon={iconClock} title='Pick meals' description=' Lorem ipsum dolor sit amet consectetur.'/>
+     
     </>
   )
 }
