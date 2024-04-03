@@ -3,6 +3,7 @@ import './App.css'
 import Button from './components/Button/Button'
 import Header from './components/Header/Header'
 import Card from './components/Card/Card'
+import  iconClock from './assets/icons/clock.svg'
 
 function App() {
 
@@ -46,7 +47,7 @@ function App() {
       <Button variant='success disabled' value='order now'  />
       <Button variant='booking' value='order now'  />
       <Button variant='booking' value='booking now'/>
-      <Card variant='info' title='Today 10:00am-7:00pm' description='working hours'/>
+      <Card variant='info' icon={iconClock} title='Today 10:00am-7:00pm' description='working hours'/>
     </>
   )
 }
