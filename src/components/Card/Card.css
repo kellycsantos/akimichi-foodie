@@ -15,6 +15,9 @@
     box-shadow: 2px 5px 8px var(--medium-gray);
     cursor:text;
 }
+.card.clickable:hover{
+    cursor: pointer;
+}
 
 .card .description{
     color: var(--dark-gray);
