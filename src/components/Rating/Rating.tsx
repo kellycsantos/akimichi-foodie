@@ -1,7 +1,7 @@
 import './Rating.css'
 type TRating = {
-    rate?: number,
-    rateTotal?: number,
+    rate: number,
+    rateTotal?: string,
 }
 
 interface IRating {
@@ -30,22 +30,18 @@ const rating: IRating[] = [
         active: false
     },
 ]
-export default function Rating() {
+export default function Rating({rate} : TRating) {
     return (
         <>
             <ul className="rating-container">
-
                 {
                     rating.map((item, index) => {
                         return <li key={index}>
-                            {<span className={item.active ? 'active' : 'inactive'}>&#9733;</span> }
+                            {<span className={index < rate ? 'active' : 'inactive'}>&#9733;</span> }
                         </li>
                     })
                 }
             </ul>
         </>
-
-
-
     )
 }
