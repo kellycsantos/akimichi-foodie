@@ -1,17 +1,36 @@
 import './Card.css'
 
 type TCard = {
-    variant : string;
+    variant: string;
     icon?: string
-    title ?: string;
-    description ?: string;
+    title?: string;
+    description?: string;
+    productCard?: boolean
 }
-export default function Card({variant,icon, title, description} : TCard){
-    return(
+export default function Card({ variant, icon, title, description, productCard }: TCard) {
+    return (
         <div className={`card ${variant}`}>
-            <img src={icon} alt='nu'/>
-            <h4 className='title'>{title}</h4>
-            <p className='description'>{description}</p>
+            <img src={icon} alt='nu' />
+            {!productCard
+                ? <>
+                    <h4 className='title'>{title}</h4>
+                    <p className='description'>{description}</p>
+                </>
+
+                :
+                <div className='product-content'>
+                    <div className='principal-info'><h4 className='title'>{title}</h4>
+                        <span>15$</span>
+                    </div>
+                    <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae?</p>
+                    <div className='footer-card'>
+                        <span>&#11088; &#11088; &#11088; &#11088;</span>
+                        <button className='buy'>+ </button>
+
+                    </div>
+                </div>
+
+            }
         </div>
     )
 }

@@ -49,8 +49,8 @@ function App() {
       <Button variant='booking' value='booking now'/>
       <Card variant='info' icon={iconClock} title='Today 10:00am-7:00pm' description='working hours'/>
       <Card variant='about' icon={iconClock} title='Pick meals' description=' Lorem ipsum dolor sit amet consectetur.'/>
-      <Card variant='about clickable' icon={iconClock} title='Pick meals' description=' Lorem ipsum dolor sit amet consectetur.'/>
-      <Card variant='product' icon="https://t4.ftcdn.net/jpg/02/74/99/01/360_F_274990113_ffVRBygLkLCZAATF9lWymzE6bItMVuH1.jpg" title='Pick meals' description=' Lorem ipsum dolor sit amet consectetur.'/>
+      <Card variant='about' icon={iconClock} title='Pick meals' description=' Lorem ipsum dolor sit amet consectetur.'/>
+      <Card variant='product clickable' productCard={true} icon="https://t4.ftcdn.net/jpg/02/74/99/01/360_F_274990113_ffVRBygLkLCZAATF9lWymzE6bItMVuH1.jpg" title='Pick meals' description=' Lorem ipsum dolor sit amet consectetur.'/>
      
     </>
   )
