@@ -5,6 +5,7 @@
   box-sizing: border-box;
   outline: none;
   text-decoration: none;
+  list-style: none;
 }
 :root {
   --primary-orange: #ff9f0d;
@@ -13,7 +14,8 @@
   --gray: #dadad9;
   --medium-gray: #b1b1b1;
   --dark-gray: #777777;
-  --bg-color: #fff
+  --bg-color: #fff;
+  --yellow-star: #ffc400;
 }
 
 @media (prefers-color-scheme: dark){

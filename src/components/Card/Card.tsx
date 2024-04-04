@@ -1,4 +1,6 @@
 import './Card.css'
+import Button from '../Button/Button'
+import Rating from '../Rating/Rating'
 
 type TCard = {
     variant: string;
@@ -24,9 +26,8 @@ export default function Card({ variant, icon, title, description, productCard }:
                     </div>
                     <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae?</p>
                     <div className='footer-card'>
-                        <span>&#11088; &#11088; &#11088; &#11088;</span>
-                        <button className='buy'>+ </button>
-
+                        <Rating/>
+                        <Button variant='buy'/>
                     </div>
                 </div>
 
