@@ -1,0 +1,19 @@
+.rating-container{
+    display: flex;
+    padding: 5px;
+}
+
+.rating-container li {
+    /* border: 1px solid red; */
+}
+
+.rating-container li span{
+    font-size: 24px;
+}
+.rating-container li span.active{
+    color: var(--yellow-star)
+}
+.rating-container li span.inactive{
+    color: #000;
+    background: re;
+}
