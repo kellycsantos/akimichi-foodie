@@ -36,12 +36,10 @@ function App() {
   return (
     <>
     <Header links={links}/>
-    <button onClick={alertTeste}>aa</button>
       <div>
         <h1>Your favourite food & hot</h1>
         <h2>Akimichi foodie</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima ullam officia, eos amet sint voluptates odit nemo provident fuga beatae.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing eli</p>
       </div>
       <Button variant='pill' value='order now'  />
       <Button variant='success disabled' value='order now'  />

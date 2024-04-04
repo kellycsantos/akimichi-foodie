@@ -13,12 +13,21 @@
   --gray: #dadad9;
   --medium-gray: #b1b1b1;
   --dark-gray: #777777;
+  --bg-color: #fff
+}
 
+@media (prefers-color-scheme: dark){
+  :root {
+    --primary-text: #fff;
+    --second-text: #000;
+    --bg-color: #1f1f1f;
+    
+  }
 }
 
 body{
   font-family: "Roboto", sans-serif;
-  
+  background: var(--bg-color);
 }
 
 h1{
@@ -33,76 +42,12 @@ h1, h2{
   text-transform: capitalize;
   line-height: 1.4em;
   margin-bottom: 10px;
+  color: var(--primary-text);
 }
 
 p{
   line-height: 1.6rem;
   padding-bottom: 15px;
   font-weight: 500;
+  color: var(--primary-text);
 }
-/* h1{
-  font-size: clamp(36px, 5vw,68px);
-} */
-
-/* :root {
-  color-scheme: light dark;
-  --primary : #caf8bf;
-  --text: black
-}
-
-body{
-  background: #323cf8;
-}
-
-@media (prefers-color-scheme : light){
- body{
-  background: #989dff;
- }
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  background: var(--primary);
-  color: var(--text);
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-    --primary : #77d85e;
-    --text: white
-  }
-  a:hover {
-    color: #747bff;
-  }
-
-} */
