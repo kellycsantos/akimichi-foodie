@@ -17,15 +17,6 @@ export default function Rating({rate, rateTotal} : TRating) {
                     })
                 }
             </ul>
-            {/* <ul className="rating-container">
-                {
-                    rating.map((item, index) => {
-                        return <li key={index}>
-                            {<span className={index < rate ? 'active' : 'inactive'}>&#9733;</span> }
-                        </li>
-                    })
-                }
-            </ul> */}
         </>
     )
 }
