@@ -1,5 +1,5 @@
 .card {
-  border-bottom-left-radius: 10px;
+  border-radius: 0 10px 0 10px;
   box-shadow: 2px 5px 6px var(--gray);
   display: flex;
   flex-direction: column;
@@ -41,7 +41,6 @@
 .card.about {
   width: 160px;
   text-align: center;
-  border-radius: 0 10px 0 10px;
 }
 
 .card.about .title {
@@ -92,6 +91,34 @@
   justify-content: space-between;
   align-items: center;
 }
+.card.review {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: clamp(215px,90%, 375px);
+  min-height: 160px;
+}
+
+.card.review .description{
+  font-size: 14px;
+  padding-block: 5px 0;
+  color: var(--primary-text);
+}
+
+.card.review img{
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+.card.review .principal-info, .card.review .footer-card button{
+  display: none;
+}
+
+.card.review .footer-card{ 
+  display: flex;
+  justify-content: center;
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
