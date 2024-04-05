@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import Button from './components/Button/Button'
 import Header from './components/Header/Header'
@@ -7,11 +6,6 @@ import  iconClock from './assets/icons/clock.svg'
 
 function App() {
 
-  function alertTeste(){
-    alert('ola')
-  }
-
-  const [count, setCount] = useState(0)
   const links = [ 
 
 
