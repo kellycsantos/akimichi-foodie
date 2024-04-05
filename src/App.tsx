@@ -51,7 +51,9 @@ function App() {
       <Card variant='product clickable' productCard icon="https://t4.ftcdn.net/jpg/02/74/99/01/360_F_274990113_ffVRBygLkLCZAATF9lWymzE6bItMVuH1.jpg" title='Pick meals' description=' Lorem ipsum dolor sit amet consectetur.' starValue={2} rateTotal={5}/>
       <Card variant='product clickable' productCard icon="https://t4.ftcdn.net/jpg/02/74/99/01/360_F_274990113_ffVRBygLkLCZAATF9lWymzE6bItMVuH1.jpg" title='Pick meals' description=' Lorem ipsum dolor sit amet consectetur.' starValue={3} rateTotal={5}/>
       <Card variant='product clickable' productCard icon="https://t4.ftcdn.net/jpg/02/74/99/01/360_F_274990113_ffVRBygLkLCZAATF9lWymzE6bItMVuH1.jpg" title='Pick meals' description=' Lorem ipsum dolor sit amet consectetur.' starValue={1} rateTotal={5}/>
-      <Card variant='review clickable' productCard icon="https://t4.ftcdn.net/jpg/02/74/99/01/360_F_274990113_ffVRBygLkLCZAATF9lWymzE6bItMVuH1.jpg" title='Pick meals' description=' Lorem ipsum dolor sit amet consectetur.' starValue={1} rateTotal={5}/>
+      <Card variant='review' productCard icon="https://t4.ftcdn.net/jpg/02/74/99/01/360_F_274990113_ffVRBygLkLCZAATF9lWymzE6bItMVuH1.jpg" title='Pick meals' description=' Lorem ipsum dolor sit amet consectetur.' starValue={5} rateTotal={5}/>
+      <Card variant='review' productCard icon="https://t4.ftcdn.net/jpg/02/74/99/01/360_F_274990113_ffVRBygLkLCZAATF9lWymzE6bItMVuH1.jpg" title='Pick meals' description=' Lorem ipsum dolor sit amet consectetur.' starValue={3} rateTotal={5}/>
+      <Card variant='review' productCard icon="https://t4.ftcdn.net/jpg/02/74/99/01/360_F_274990113_ffVRBygLkLCZAATF9lWymzE6bItMVuH1.jpg" title='Pick meals' description=' Lorem ipsum dolor sit amet consectetur.' starValue={4} rateTotal={5}/>
      
     </>
   )
