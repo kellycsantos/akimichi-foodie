@@ -6,8 +6,7 @@
   align-items: center;
   transition: 0.3s ease-in-out;
   padding: 10px;
-  /*remover linha abaixo*/
-  margin: 15px;
+  margin: 7px;
 }
 
 .card .title {

@@ -24,6 +24,8 @@ export default function Header({ links }: INav) {
                 }
                 <Button variant="cart"/>
                 <Button variant="booking" value="booking now"/>
+                <Button variant="menu" />
+          
             </nav>
         </header>
     )
