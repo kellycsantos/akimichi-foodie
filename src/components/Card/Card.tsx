@@ -10,8 +10,9 @@ type TCard = {
     productCard?: boolean ;
     starValue?:  number ;
     rateTotal?: number;
+    valuePlate?: string
 }
-export default function Card({ variant, icon, title, description, productCard, starValue, rateTotal }: TCard) {
+export default function Card({ variant, icon, title,valuePlate , description, productCard, starValue, rateTotal }: TCard) {
     return (
         <div className={`card ${variant}`}>
             <img src={icon} alt='nu' />
@@ -24,7 +25,7 @@ export default function Card({ variant, icon, title, description, productCard, s
                 :
                 <div className='product-content'>
                     <div className='principal-info'><h4 className='title'>{title}</h4>
-                        <span>15$</span>
+                        <span>{valuePlate}$</span>
                     </div>
                     <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae?</p>
                     <div className='footer-card'>

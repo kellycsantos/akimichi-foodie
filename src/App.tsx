@@ -31,9 +31,10 @@ function App() {
 
   interface IPratos {
     id: number,
-    name: string,
     img: string,
+    name: string,
     description: string,
+    value:string,
     avaliacao: number
   }
 
@@ -80,7 +81,7 @@ function App() {
       {
         pratos.map((prato) => 
         <Card key={prato.id} variant='product clickable' productCard 
-        icon={prato.img} title={prato.name} description={prato.description} 
+        icon={prato.img} title={prato.name} valuePlate={prato.value} description={prato.description} 
         starValue={prato.avaliacao} rateTotal={5} />
 
         ) 
