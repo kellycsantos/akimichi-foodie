@@ -2,7 +2,7 @@ import './App.css'
 import Button from './components/Button/Button'
 import Header from './components/Header/Header'
 import Card from './components/Card/Card'
-import iconClock from './assets/icons/clock.svg'
+
 import principalFood from './assets/images/principal-food.png'
 import { baseUrl,infoData } from './services/api'
 import { useEffect, useState } from 'react'
@@ -68,8 +68,8 @@ function App() {
       </section>
        <section className='info'>
       {
-        infoData.map(info => 
-          <Card variant='info' icon={iconClock} title={info.title} description={info.description} />
+        infoData.map((info,index) => 
+          <Card key={index} variant='info' icon={info.icon} title={info.title} description={info.description} />
           
           )
       }
@@ -86,6 +86,16 @@ function App() {
         ) 
       }
        </section>
+
+       {/* <section className='info'>
+      {
+        infoData.map(info => 
+          <Card variant='info' icon={iconClock} title={info.title} description={info.description} />
+          
+          )
+      }
+
+       </section> */}
       {/* <Button variant='success disabled' value='order now' />
       <Button variant='booking' value='order now' />
       <Button variant='booking' value='booking now' />
