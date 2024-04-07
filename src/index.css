@@ -59,9 +59,9 @@ p{
   color: var(--primary-text);
 }
 
-/* section{
-  background: #000;
-} */
+section{
+  padding-block: 30px;
+}
 
 section.home{
   background: url('./assets/bgs/bg-home.svg') no-repeat right ;
@@ -74,7 +74,6 @@ section.home{
 }
 
 .introduction .text{
-  border: 1px solid greenyellow;
  max-width: 700px;
 }
 
@@ -84,7 +83,7 @@ section.home{
 }
 
 section.info{
-  border: 1px solid green;
+  display: flex;
 }
 
 section.pratos{

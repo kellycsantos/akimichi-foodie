@@ -4,8 +4,7 @@ import Header from './components/Header/Header'
 import Card from './components/Card/Card'
 import iconClock from './assets/icons/clock.svg'
 import principalFood from './assets/images/principal-food.png'
-import getMenu from './services/api'
-import { baseUrl } from './services/api'
+import { baseUrl,infoData } from './services/api'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
@@ -68,10 +67,16 @@ function App() {
         </div>
       </section>
        <section className='info'>
-      
+      {
+        infoData.map(info => 
+          <Card variant='info' icon={iconClock} title={info.title} description={info.description} />
+          
+          )
+      }
 
        </section>
        <section className='pratos'>
+
       {
         pratos.map((prato) => 
         <Card key={prato.id} variant='product clickable' productCard 
@@ -84,7 +89,6 @@ function App() {
       {/* <Button variant='success disabled' value='order now' />
       <Button variant='booking' value='order now' />
       <Button variant='booking' value='booking now' />
-      <Card variant='info' icon={iconClock} title='Today 10:00am-7:00pm' description='working hours' />
       <Card variant='about' icon={iconClock} title='Pick meals' description=' Lorem ipsum dolor sit amet consectetur.' />
       <Card variant='about' icon={iconClock} title='Pick meals' description=' Lorem ipsum dolor sit amet consectetur.' />
       <Card variant='product clickable' productCard icon="https://t4.ftcdn.net/jpg/02/74/99/01/360_F_274990113_ffVRBygLkLCZAATF9lWymzE6bItMVuH1.jpg" title='Pick meals' description=' Lorem ipsum dolor sit amet consectetur.' starValue={2} rateTotal={5} />
